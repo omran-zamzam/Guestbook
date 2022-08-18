@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/omran-zamzam/Guestbook.git
     targetRevision: HEAD
-    path: Guestbook
+    path: 
   destination: 
     server: https://kubernetes.default.svc
     namespace: guestbook
@@ -18,6 +18,3 @@ spec:
     syncOptions:
     - CreateNamespace=true
 
-    automated:
-      selfHeal: true
-      prune: true
