@@ -9,7 +9,10 @@ spec:
   source:
     repoURL: https://github.com/omran-zamzam/Guestbook.git
     targetRevision: HEAD
-    path: dep 
+    path: .
+    directory:
+      recurse: true
+      jsonnet: {} 
   destination: 
     server: https://kubernetes.default.svc
     namespace: guestbook
