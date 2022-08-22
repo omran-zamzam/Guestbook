@@ -8,8 +8,8 @@ spec:
 
   source:
     repoURL: https://github.com/omran-zamzam/Guestbook.git
-    targetRevision: kustomization/HEAD
-    path: dep/manifests/kustomization.yaml
+    targetRevision: kustomization
+    path: dep/manifests/
     
     directory:
       recurse: true
