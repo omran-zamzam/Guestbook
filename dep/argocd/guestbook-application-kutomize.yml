@@ -5,23 +5,16 @@ metadata:
   namespace: argocd
 spec:
   project: default
-
   source:
     repoURL: https://github.com/omran-zamzam/Guestbook.git
-    targetRevision: kustomization
-    path: dep/manifests/
-    
-    directory:
-      recurse: true
-      jsonnet: {} 
+    targetRevision: kutomization
+    path: dep/overlays/test8
   destination: 
     server: https://kubernetes.default.svc
-    namespace: kustomize
-
+    namespace: test8
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true

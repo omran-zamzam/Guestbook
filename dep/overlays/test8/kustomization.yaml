@@ -4,10 +4,10 @@ kind: Kustomization
 bases:
  - ../../manifests/
 
-images:
- - name: gcr.io/google_samples/gb-frontend
-   newName: nginx
-   newTag: v1
+#images:
+# - name: gcr.io/google_samples/gb-frontend
+#   newName: nginx
+#   newTag: v1
 
 
 #replicas:
@@ -16,13 +16,13 @@ images:
         
 #different way to change replica using patch method
 
-patches:
- - target:
-    kind: Deployment
-    name: frontend
-   patch: |-
-    - op: replace
-      path: /spec/replicas
-      value: 2
+#patches:
+# - target:
+#    kind: Deployment
+#    name: frontend
+#   patch: |-
+#    - op: replace
+#      path: /spec/replicas
+#      value: 2
 
 namespace: test8

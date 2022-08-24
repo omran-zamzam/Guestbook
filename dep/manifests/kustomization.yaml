@@ -8,12 +8,12 @@ resources:
         
 namespace: kustomize
 
-patches:
- - target:
-    kind: Deployment
-    name: frontend
+#patches:
+# - target:
+#    kind: Deployment
+#    name: frontend
 
-   patch: |-
-     - op: replace
-       path: /spec/replicas
-       value: 1
+#   patch: |-
+#     - op: replace
+#       path: /spec/replicas
+#       value: 1
