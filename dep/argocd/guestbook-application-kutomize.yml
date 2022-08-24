@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/omran-zamzam/Guestbook.git
-    targetRevision: kutomization
+    targetRevision: kustomization
     path: dep/overlays/test8
   destination: 
     server: https://kubernetes.default.svc
